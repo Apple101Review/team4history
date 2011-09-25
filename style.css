@@ -1,0 +1,88 @@
+#wrapper{
+	margin-left:20%;	
+}
+#slider-wrapper {
+    background:url(images/slider.png) no-repeat; /* Slider border and shadows */
+    width:668px;
+    height:299px;
+    margin:0 auto;
+    /*padding-top:17px; /* Push the actual slider into the centre */
+    margin-top:150px;
+    position:relative;
+}
+
+#slider {
+    position:relative;
+    width:680px;
+    height:335px;
+    margin-left:19px; /* Push the actual slider into the centre */
+    background:url(images/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+    width:680px;
+    height:335px;
+}
+#slider a {
+    border:0;
+    display:block;
+}
+
+.nivo-controlNav {
+    background:url(images/controlnav.png) no-repeat; /* Background for the bullets */
+    width:251px;
+    height:40px;
+    position:absolute;
+    left:200px; /* Manually position in centre. Not perfect */
+    bottom:-42px;
+    padding:8px 0 0 82px;
+    z-index:9; /* Make sure it is visible above the slides */
+}
+.nivo-controlNav a {
+    display:block;
+    width:22px;
+    height:22px;
+    background:url(images/bullets.png) no-repeat;
+    text-indent:-9999px;
+    border:0;
+    margin-right:3px;
+    float:left;
+}
+.nivo-controlNav a.active {
+    background-position:0 -22px; /* Selected bullet */
+}
+
+.nivo-caption {
+    bottom:40%; /* Vertically centre the captions */
+    left:auto;
+    right:0px; /* Put them on the right */
+    width:auto;
+    max-width:630px;
+    overflow:hidden;
+    background:#fff;
+    text-shadow:none;
+    font-family: 'Anton', arial, serif; /* Using a Google Font (not required) */
+    color:#4c4b4b;
+}
+.nivo-caption p {
+    padding:5px 15px;
+}
+.nivo-caption a {
+    color:#333;
+    font-weight:bold;
+    font-size:27px;
+    text-transform:uppercase;
+}
+
+#featured {
+    background:url(images/featured.png) no-repeat;
+    width:115px;
+    height:110px;
+    position:absolute;
+    top:-8px; /* Bump up a bit to give the fold effect */
+    left:-8px; /* Bump left a bit to give the fold effect */
+    z-index:20; /* Make sure it is visible above the slides */
+}

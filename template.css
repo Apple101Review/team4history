@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Normal Tags*/
+body{
+	background:url(images/Cross.png);
+	background-color:#171115;
+}
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#999999;
+	
+	font-size:1em;
+}
+h1{
+	font-family:'Raleway', sans-serif;
+	color:#82E8CF;
+}
+/*Class Tags*/
+.titleBar{
+	position:fixed;
+	top:0%;
+	left:0%;
+	z-index:11;
+	height:10%;
+	width:100%;
+	background-color:#252CFF;
+	-webkit-box-shadow: 5px 5px 5px #999;
+	-webkit-border-radius: 3px;
+}
+.headertitle, .quote{
+	font-family: 'Droid Sans',Arial, Helvetica, sans-serif;
+	font-size:3em;
+	color:#000000;
+	position:fixed;
+	z-index:10;
+	top:0%;
+	left:1%;
+}
+.quote{
+	text-align:right;
+	right:0%;
+}
+.content{
+	width:80%;
+	left:7%;
+	position:relative;
+	margin:auto;
+	margin-top:10%;
+	top:15%;
+	background-color:rgb(43,41,34);
+	-webkit-box-shadow: 5px 5px 5px #999;
+	-webkit-border-radius: 3px;
+}
+.navbarcss{
+	margin-top:2%;
+	top:2em;
+	font-size:2em;
+	position:fixed;
+	float:left;
+	margin:2 auto;
+	width: 6.5em;
+}
+.navbarcss ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+	position:relative;
+	z-index:5;	
+	-webkit-border-radius:3px;
+}
+	.navbarcss li{
+		background:#ccc;
+		padding:1px;
+		margin: 2px;
+		cursor: pointer;
+		border: 1px solid #ccc;	
+	}
+	.navbarcss li a:hover{
+		text-color:#000000;
+	}
+	
+	.navbarcss li a{
+		text-decoration:none;
+		color:#888;	
+		-webkit-transition:color 500ms ease-in;
+	}
