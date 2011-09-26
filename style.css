@@ -1,0 +1,38 @@
+
+body {
+	background-color: black;
+}
+
+.header {
+	margin-left: 15%;
+	text-align: center;
+	color: rgb(39,181,225);
+}
+
+.title {
+	font-size: 4.5em;
+}
+
+.subtitle {
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.content {
+	background-color: rgb(39,181,225); /* 39, 181, 225*/
+	text-align: left;
+	width: 750px;
+	margin: 0 auto;
+	padding: .5em;
+	z-index:2;
+}
+
+#team4logo {
+	position:absolute;
+    left: 25px;
+    top: -15px;
+	z-index:1;
+}
+
