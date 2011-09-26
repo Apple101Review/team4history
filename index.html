@@ -2,18 +2,8 @@
 layout: default
 title: Team 4 Element
 ---
-	<div id="wrapper">
-	   	<div id="slider_wrapper">
-	       	<div id="slider">
-	           	<img src="images/slider/phs.jpg">
-	            <img src="images/slider/top.jpg">
-	            <img src="images/slider/s.jpg">
-	            <img src="images/slider/f.jpg">
-	      	</div>
-	    </div>
-	</div>
-    {% for post in site.posts %}
-    	<h1>{{post.title}}</h1>
-    	<p>{{post.content}}</p>
-    {% endfor %}
-<br>
+
+{% for post in site.posts %}
+	<h1>{{post.title}}</h1>
+	<p>{{post.content}}</p>
+{% endfor %}
