@@ -37,6 +37,7 @@ div#content {
 	text-align: left;
 	width: 750px;
 	margin: 0 auto;
+	float: left;
 	padding: .5em;
 	z-index:2;
 }
