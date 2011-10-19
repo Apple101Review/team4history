@@ -10,7 +10,7 @@ body {
 	text-align: center;
 	color: rgb(39,181,225);
 }*/
-div#header{width:100%;overflow:hidden;background: black}
+div#header{width:100%;overflow:hidden;background: black; float: right;}
 div#header h1,div#menu{width:765px;margin:0 auto;text-align:left}
 div#header h1{padding: 30px 0 10px;color: #FFF}
 
@@ -28,11 +28,11 @@ ul#nav li.activelink a,ul#nav li.activelink a:hover{background: #FFF;color: #003
 .subtitle {
 }
 
-#wrapper {
+div#wrapper {
 	text-align: center;
 }
 
-.content {
+div#content {
 	background-color: rgb(39,181,225); /* 39, 181, 225*/
 	text-align: left;
 	width: 750px;
@@ -42,9 +42,8 @@ ul#nav li.activelink a,ul#nav li.activelink a:hover{background: #FFF;color: #003
 }
 
 #team4logo {
-	position:absolute;
-    left: 25px;
-    top: -15px;
+	float: left;
+    width: 20%;
 	z-index:1;
 }
 

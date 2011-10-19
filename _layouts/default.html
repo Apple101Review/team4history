@@ -5,9 +5,14 @@
 		<link rel="stylesheet" type="text/css" href="style.css"/> 
 		<script type="text/javascript" src="niftycube.js"></script>
 		<script type="text/javascript">
-			window.onload = function() {
-				Nifty("div#wrapper","bottom");
-			}
+			window.onload=function(){
+				Nifty("div#content","big bottom");
+			};
+			
+			window.onresize = function(){
+    			var img = document.getElementById('team4logo');
+				    img.style.width = "20%";
+			};
 		</script>
 		<title>{{ page.title }}</title>
 	</head> 
@@ -24,9 +29,9 @@
 			</ul>
 			</div>
 		</div>
-		<img src="images/team 4 logo.gif" width=125 height=232 id="team4logo"/>
+		<img src="images/team 4 logo.gif" id="team4logo"/>
 		<div id="wrapper">
-			<div class="content">
+			<div id="content">
 				{{ content }}
 				<div style="text-align: right; margin: .5em;"><h5>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a></h5></div>
 			</div>
