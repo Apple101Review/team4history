@@ -11,7 +11,7 @@ body {
 	color: rgb(39,181,225);
 }*/
 div#header{width:100%;overflow:hidden;background: black; float: right;}
-div#header h1,div#menu{width:765px;margin:0 auto;text-align:left}
+div#header h1,div#menu{width:75%;margin:0 auto;text-align:left}
 div#header h1{padding: 30px 0 10px;color: #FFF}
 
 ul#nav,ul#nav li{list-style-type:none;margin:0;padding:0}
@@ -35,16 +35,24 @@ div#wrapper {
 div#content {
 	background-color: rgb(39,181,225); /* 39, 181, 225*/
 	text-align: left;
-	width: 750px;
+	width: 70%;
 	margin: 0 auto;
-	float: left;
+	float:left;
 	padding: .5em;
 	z-index:2;
 }
 
-#team4logo {
+div#logos {
 	float: left;
-    width: 20%;
-	z-index:1;
+	width: 20%;
+	margin-right:5px; 
+}
+
+#team4logo {
+    width: 100%;
+}
+
+#frclogo {
+	width: 100%;
 }
 

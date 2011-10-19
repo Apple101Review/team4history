@@ -9,10 +9,10 @@
 				Nifty("div#content","big bottom");
 			};
 			
-			window.onresize = function(){
+			/*window.onresize = function(){
     			var img = document.getElementById('team4logo');
 				    img.style.width = "20%";
-			};
+			};*/
 		</script>
 		<title>{{ page.title }}</title>
 	</head> 
@@ -30,7 +30,10 @@
 			</div>
 		</div>
 		<div id="wrapper">
-			<img src="images/team 4 logo.gif" id="team4logo"/>
+			<div id="logos">
+				<img src="images/team 4 logo.gif" id="team4logo"/><br/>
+				<img src="images/FRCicon_RGB.gif" id="frclogo"/>
+			</div>
 			<div id="content">
 				{{ content }}
 				<div style="text-align: right; margin: .5em;"><h5>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a></h5></div>
