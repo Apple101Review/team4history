@@ -21,11 +21,11 @@
 			<h1>Team 4 Element</h1>
 			<div id="menu">
 			<ul id="nav">
-				<li id="home" class="activelink"><a href="#">Home</a></li>
-				<li id="who"><a href="#">About</a></li>
-				<li id="prod"><a href="#">Product</a></li>
-				<li id="serv"><a href="#">Services</a></li>
-				<li id="cont"><a href="#">Contact us</a></li>
+				<li id="home" {% if page.id == 'home' %}class="activelink"{%endif%}><a href="/">Home</a></li>
+				<li id="who"  {% if page.id == 'about' %}class="activelink"{%endif%}><a href="/about.html">About</a></li>
+				<li id="prod" {% if page.id == 'prod' %}class="activelink"{%endif%}><a href="/product.html">Product</a></li>
+				<li id="serv" {% if page.id == 'serv' %}class="activelink"{%endif%}><a href="/services.html">Services</a></li>
+				<li id="cont" {% if page.id == 'contact' %}class="activelink"{%endif%}><a href="/contact.html">Contact us</a></li>
 			</ul>
 			</div>
 		</div>
