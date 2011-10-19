@@ -2,16 +2,30 @@
 <html> 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link rel="stylesheet" type="text/css" href="/style.css"/> 
+		<link rel="stylesheet" type="text/css" href="style.css"/> 
+		<script type="text/javascript" src="niftycube.js"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				Nifty("div#wrapper","bottom");
+			}
+		</script>
 		<title>{{ page.title }}</title>
 	</head> 
 	<body>
-		<div class="header">
-			<span class="title">Team 4 Element</span> <br/>
-			<span class="subtitle">Igniting the flames of passion!</span>
+		<div id="header">
+			<h1>Team 4 Element</h1>
+			<div id="menu">
+			<ul id="nav">
+				<li id="home" class="activelink"><a href="#">Home</a></li>
+				<li id="who"><a href="#">About</a></li>
+				<li id="prod"><a href="#">Product</a></li>
+				<li id="serv"><a href="#">Services</a></li>
+				<li id="cont"><a href="#">Contact us</a></li>
+			</ul>
+			</div>
 		</div>
-		<img src="/images/team 4 logo.gif" width=125 height=232 id="team4logo"/>
-		<div class="wrapper">
+		<img src="images/team 4 logo.gif" width=125 height=232 id="team4logo"/>
+		<div id="wrapper">
 			<div class="content">
 				{{ content }}
 				<div style="text-align: right; margin: .5em;"><h5>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a></h5></div>

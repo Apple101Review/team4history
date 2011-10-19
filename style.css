@@ -1,13 +1,25 @@
 
 body {
 	background-color: black;
+	margin: 0
+	padding: 0
 }
 
-.header {
+/*.header {
 	margin-left: 15%;
 	text-align: center;
 	color: rgb(39,181,225);
-}
+}*/
+div#header{width:100%;overflow:hidden;background: black}
+div#header h1,div#menu{width:765px;margin:0 auto;text-align:left}
+div#header h1{padding: 30px 0 10px;color: #FFF}
+
+ul#nav,ul#nav li{list-style-type:none;margin:0;padding:0}
+ul#nav{float:right;font-size: 80%}
+ul#nav li{float:left;margin-left: 3px;text-align: center}
+ul#nav a{float:left;width: 95px;padding: 5px 0;background: rgb(39,181,225);text-decoration:none;color: #FFC}
+ul#nav a:hover{background: #5CCCCC;color: black}
+ul#nav li.activelink a,ul#nav li.activelink a:hover{background: #FFF;color: #003}
 
 .title {
 	font-size: 4.5em;
@@ -16,7 +28,7 @@ body {
 .subtitle {
 }
 
-.wrapper {
+#wrapper {
 	text-align: center;
 }
 
