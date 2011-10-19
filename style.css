@@ -1,6 +1,6 @@
 
 body {
-	background-color: black;
+	background: black url('images/footstuff.png') fixed repeat-x left bottom;
 	margin: 0
 	padding: 0
 }
@@ -56,3 +56,6 @@ div#logos {
 	width: 100%;
 }
 
+div#footer {
+	clear: both;
+}
