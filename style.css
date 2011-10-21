@@ -33,7 +33,7 @@ div#wrapper {
 }
 
 .fadein { position:relative; width: 100%; height: 450px; text-align: center;}
-.fadein img { position:absolute; left:0; top:0; width: 100%;}
+.fadein img { position:absolute; left:0; top:0; width: 100%; height: 100%;}
 
 div#content {
 	background-color: rgb(39,181,225); /* 39, 181, 225*/
