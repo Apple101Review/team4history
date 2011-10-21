@@ -3,4 +3,18 @@ layout: default
 title: Team 4 Element
 id: home
 ---
-Hi
+<script type="text/javascript">
+$(function(){
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein');}, 
+      3000);
+});
+</script>
+<div class="fadein">
+	<img src="images/slider/everyone do something!.jpg"/>
+	<img src="images/slider/our robot is off the ground!!.jpg"/>
+	<img src="images/slider/look at it look at it.jpg"/>
+</div>
