@@ -32,8 +32,6 @@ ul#nav li.activelink a,ul#nav li.activelink a:hover{background: #FFF;color: #003
 
 div#wrapper {
 	text-align: center;
-	position:relative;
-	z-index: 1001;
 }
 
 .fadein { position:relative; width: 100%; height: 450px; text-align: center;}
@@ -57,8 +55,7 @@ div#logos {
 	margin-right:5px; 
 	margin-top: 150px;
 	position: relative;
-	z-index:2;
-}
+	z-index:2;}
 
 #team4logo {
 	position: absolute;
