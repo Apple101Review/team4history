@@ -12,12 +12,11 @@ body {
 	text-align: center;
 	color: rgb(39,181,225);
 }*/
-div#header{width:100%;overflow:hidden; no-repeat;
-	float: right; height: 350; }
+div#header{width:100%;overflow:hidden; float: right;}
 div#header h1,div#menu{width:75%;margin:0 auto;text-align:left}
-div#header h1{padding: 30px 0 10px;color: #FFF; float:right; position:relative; z-index: 1000;}
+div#header h1{padding: 30px 0 10px;color: #FFF; float:right;}
 
-ul#nav,ul#nav li{list-style-type:none;margin:0;padding:0}
+ul#nav,ul#nav li{list-style-type:none;margin:0;padding:0;}
 ul#nav{float:right;font-size: 80%}
 ul#nav li{float:left;margin-left: 3px;text-align: center}
 ul#nav a{float:left;width: 95px;padding: 5px 0;background: rgb(39,181,225);text-decoration:none;color: #FFC}
@@ -33,8 +32,6 @@ ul#nav li.activelink a,ul#nav li.activelink a:hover{background: #FFF;color: #003
 
 div#wrapper {
 	text-align: center;
-	position:relative;
-	z-index: 1001;
 }
 
 .fadein { position:relative; width: 100%; height: 450px; text-align: center;}
@@ -55,13 +52,12 @@ div#logos {
 	width: 20%;
 	margin-right:5px; 
 	margin-top: 150px;
-	position:relative;
-	z-index: 1000;
 }
 
 #team4logo {
-	z-index: 1;
 	position: absolute;
+	top: -25px;
+	left: 5px;
 }
 
 #frclogo {
