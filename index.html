@@ -18,3 +18,7 @@ $(function(){
 	<img src="images/slider/our robot is off the ground!!.jpg"/>
 	<img src="images/slider/look at it look at it.jpg"/>
 </div>
+{% for post in site.posts %}
+	<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+	<p>{{post.content}}</p>
+{% endfor %}
