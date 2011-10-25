@@ -9,7 +9,7 @@
 	</head> 
 	<body>
 		<div id="header">
-			<h1>Team 4 Element</h1>
+			
 			<div id="menu">
 			<ul id="nav">
 				<li id="home" {% if page.id == 'home' %}class="activelink"{%endif%}><a href="/">Home</a></li>
@@ -19,11 +19,12 @@
 				<li id="cont" {% if page.id == 'contact' %}class="activelink"{%endif%}><a href="/contact.html">Contact us</a></li>
 			</ul>
 			</div>
+			<h1>Team 4 Element</h1>
+			<img src="images/team4resize.png" id="team4logo"/>
 		</div>
 		<div id="wrapper">
 			<div id="logos">
-				<img src="/images/team 4 logo.gif" id="team4logo"/><br/>
-				<img src="/images/FRCicon_RGB.gif" id="frclogo"/>
+				<img src="images/FRCicon_RGB.gif" id="frclogo"/>
 			</div>
 			<div id="content">
 				{{ content }}
