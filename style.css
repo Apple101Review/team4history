@@ -1,8 +1,10 @@
 
 body {
-	background: black url('/images/footstuff.png') fixed repeat-x left bottom;
+	background: black url('images/footstuff.png') fixed repeat-x left bottom;
 	margin: 0;
 	padding: 0;
+	font-family: sans-serif;
+	font-size: 90%;
 }
 
 /*.header {
