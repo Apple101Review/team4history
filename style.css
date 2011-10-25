@@ -67,6 +67,7 @@ div#logos {
 
 #frclogo {
 	width: 100%;
+	position:relative;
 }
 
 div#footer {
