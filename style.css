@@ -32,7 +32,7 @@ ul#nav li.activelink a,ul#nav li.activelink a:hover{background: #FFF;color: #003
 
 div#wrapper {
 	text-align: center;
-	position: relative;
+	position:relative;
 	z-index: 1001;
 }
 
@@ -45,7 +45,6 @@ div#content {
 	width: 70%;
 	min-width: 585px;
 	margin: 0 auto;
-	margin-top: -450px;
 	float:left;
 	padding: .5em;
 	position: relative;
@@ -70,8 +69,6 @@ div#logos {
 
 #frclogo {
 	width: 100%;
-	padding-left: 30px;
-	padding-top: -75px;
 }
 
 div#footer {
