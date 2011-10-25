@@ -15,7 +15,7 @@ div#header h1,div#menu{width:75%;margin:0 auto;text-align:left;}
 div#header h1{padding: 30px 0 10px;color: #FFF; float:right; position: relative; z-index:2;}
 
 ul#nav,ul#nav li{list-style-type:none;margin:0;padding:0;}
-ul#nav{float:right;font-size: 80%; position: relative;}
+ul#nav{float:right;font-size: 90%; font-weight: 600; position: relative;}
 ul#nav li{float:left;margin-left: 3px;text-align: center}
 ul#nav a{float:left;width: 95px;padding: 5px 0;background: rgb(9,151,195);text-decoration:none;color: #FFC}
 ul#nav a:hover{background: rgb(59,201,255);color: black}
