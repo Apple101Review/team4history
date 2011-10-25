@@ -12,9 +12,16 @@ body {
 	text-align: center;
 	color: rgb(39,181,225);
 }*/
+<<<<<<< HEAD
 div#header{width:100%;overflow:hidden; float: right;}
 div#header h1,div#menu{width:75%;margin:0 auto;text-align:left;}
 div#header h1{padding: 30px 0 10px;color: #FFF; float:right; position: relative; z-index:2;}
+=======
+div#header{width:100%;overflow:hidden; no-repeat;
+	float: right; height: 350; }
+div#header h1,div#menu{width:75%;margin:0 auto;text-align:left}
+div#header h1{padding: 30px 0 10px;color: #FFF; float:right; position:relative; z-index: 1000;}
+>>>>>>> Properly puts phoenix in hipster position
 
 ul#nav,ul#nav li{list-style-type:none;margin:0;padding:0;}
 ul#nav{float:right;font-size: 90%; font-weight: 600; position: relative;}
@@ -32,7 +39,7 @@ ul#nav li.activelink a,ul#nav li.activelink a:hover{background: #FFF;color: #003
 
 div#wrapper {
 	text-align: center;
-	position: relative;
+	position:relative;
 	z-index: 1001;
 }
 
@@ -45,7 +52,6 @@ div#content {
 	width: 70%;
 	min-width: 585px;
 	margin: 0 auto;
-	margin-top: -450px;
 	float:left;
 	padding: .5em;
 	position: relative;
@@ -70,8 +76,6 @@ div#logos {
 
 #frclogo {
 	width: 100%;
-	padding-left: 30px;
-	padding-top: -75px;
 }
 
 div#footer {
