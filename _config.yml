@@ -1,2 +1,4 @@
 ---
 permalink: /:month-:day-:year/:title.html
+paginate: 3
+---
