@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Down to the Wire
-author: By Destiny Flanagan
+author: Destiny Flanagan
 ---
 <html>
 	&nbsp;&nbsp;&nbsp;&nbsp;Hello Team 4 members and parents. We are in our last week of build season and there is a lot of pressure on the team. At this point they have 3 days to complete the robot before the deadline. The students are working hard to achieve that goal and do well in this year&apos;s competitions.<br /><br />
-	Programming is working on hybrid mode; they have finished all of the other modes. Shawn says the camera tracking system is almost perfect. The department is almost done with everything that they need to do, but they still need to test their code.<br /><div style="width:635px;padding:10px;background-color:black;color:#28FE14;font-family:Courier,serif">
+	Programming is working on hybrid mode; they have finished all of the other modes. Shawn says the camera tracking system is almost perfect. The department is almost done with everything that they need to do, but they still need to test their code.<br /><div style="width:590px;padding:10px;background-color:black;color:#28FE14;font-family:Courier,serif">
 //<br />
 // Department: Programming<br />
 // Goal: Program the robot<br />

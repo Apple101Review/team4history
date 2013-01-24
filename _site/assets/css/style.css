@@ -1,0 +1,152 @@
+body {
+	font-family: Century Gothic, Arial, Verdana;
+	font-size: 18px;
+	word-spacing: 2px;
+	margin: 0px;
+	
+	/*background-color: RGB(39,181,255);*/
+
+
+
+	/*background-color: #93DAFF;*/
+}
+
+.header {
+	margin: 10px auto 2px auto;
+	text-align: center;
+	width: 800px;
+	background-image:url('images/assets/team4silverlogoslayoutsmaller.png');
+	background-position: left top;
+	min-height: 143px;
+}
+
+.mainContentWrapper {
+	margin: 10px auto 2px auto;
+	width: 930px;
+}
+
+.mainContentWrapperInside {
+	margin: 10px auto 2px auto;
+	width: 930px;
+	min-height: 3560px;
+	background-color: #FFFFFF;
+	padding: 13px;
+	padding-bottom: 0px;
+	border-bottom: 3px solid #000000;
+}
+
+.photoslider {
+	width: 930px;
+	/*margin-left: 20%;*/
+	border: #000000 3px solid;
+}
+
+.sidebar {
+	width: 220px;
+	float: left;
+	text-align: left;
+	padding: 10px;
+	/*background-color: #999999;
+	border: 1px dashed #666666;*/
+	font-size: 18px;
+	color: #333333;
+	margin-top: 10px;
+	font-family: Century Gothic, Arial, Verdana;
+
+}
+
+.sidebar li {
+	list-style-type: none;
+}
+
+.sidebar ul a {
+	text-decoration: none;
+	color: rgb(39,181,255);
+	font-weight: bolder;
+}
+
+.sidebar ul a:hover {
+	color: #b5b5b8;
+}
+
+.recentBlogPosts {
+	padding: 10px;
+	border: 3px solid #000000;
+	width: 200px;
+}
+
+.post_info {
+	color: #000000;
+	font-size: 18px;
+	font-style: normal;
+}
+
+.post_info a {
+	text-decoration: none;
+	color: #00A8FF;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.post_info a:hover {
+		color: #b5b5b8;
+
+}
+
+.mainHeader {
+	margin-top: 25px;
+	background-color: #B5B5B6;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bolder;
+	float: right;
+	width: 645px;
+	border: 3px solid #000000;
+	border-bottom-width: 0px;
+	font-family: Century Gothic, Arial, Verdana;
+
+}
+
+.main {
+	width: 645px;
+	float: right;
+	text-align: left;
+	padding: 10px;
+	background-color: #C2C2C2;
+	font-size: 19px;
+	color: #000000;
+	border: 3px solid #000000;
+	font-family: Century Gothic, Arial, Verdana;
+
+}
+
+.main img {
+	width: 645px;
+}
+
+.caption {
+	text-align: center;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+.footer {
+	margin: 10px auto 10px;
+	padding: 13px;
+	padding-top: 0px;
+	width: 930px;
+	background-color: #B5B5B6;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	color: #000000;
+	min-height: 100px;
+	border-top: 3px solid #000000;
+}
+
+.footer a {
+	text-decoration: none;
+	color: rgb(39,181,255);
+
+}

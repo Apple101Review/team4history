@@ -1,114 +1,16 @@
 ---
-layout: default
-title: Home
-id: Home
+layout: home
+title: Home - Team4ELEMENT
+headercontent: Latest Team Blog Post
 ---
-<center>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <div id="menu-wrap" />
-    <div class="menu-block">
-        <span id="redblock">FIRST</span>
-        <div class="thumb_content">
-            <h1>FIRST</h1>
+{% for post in site.posts limit: 1 %}
+  <div class="post_info">
+
+            <a href="{{ post.url }}">{{ post.title }}</a><br />
+            <span>{{ post.date | date:"%m-%d-%Y" }}</span><br />
+            By {{ post.author }}
             <br />
-            <a href="http://usfirst.org" target="_blank">Website</a>
-            <br />
-            <a href="firstmotto.html">Motto</a>
-            <br />
-            <a href="aboutfirst.html">About</a>
-            <br />
-            <a href="2012gameinfo.html">2012 Game Info</a>
-            <br />
-            <a href="previousgames.html">Previous Games</a>
-        </div>
+
+    </br> {{ post.content }} 
     </div>
-    <!-- block end -->
-    <div id="menu-wrap" />
-    <div class="menu-block">
-        <span id="whiteblock">About Us</span>
-        <div class="thumb_content">
-            <h1>About Us</h1>
-            <br />
-            <a href="aboutourteam.html">Our Team</a>
-            <br />
-            <a href="aboutourschool.html">Our School</a>
-            <br />
-            <a href="teamachievements.html">Achievements</a>
-            <br />
-            <a href="teammembers.html">Team Members</a>
-        </div>
-    </div>
-    <!-- block end -->
-    <div id="menu-wrap" />
-    <div class="menu-block">
-        <span id="blueblock">Our Robots</span>
-        <div class="thumb_content">
-            <h1>Our Robots</h1>
-            <br /><br />
-            <a href="2012robot.html">2012</a>
-        </div>
-    </div>
-    <!-- block end -->
-    <div id="menu-wrap">
-        <div class="menu-block">
-            <a href="mentors.html"><span id="mentors">Mentors</span></a>
-        </div>
-        <!-- block end -->
-    </div>
-    <div id="menu-wrap" />
-    <div class="menu-block">
-        <span id="blackblock">Media</span>
-        <div class="thumb_content">
-            <h1>Media</h1>
-            <br />
-            <a href="teamblog.html">Team Blog</a>
-            <br />
-            <a href="photogal.html">Photo Gallery</a>
-            <br />
-            <a href="videogal.html">Video Gallery</a>
-        </div>
-    </div>
-    <!-- block end -->
-    <div id="menu-wrap" />
-    <div class="menu-block">
-        <span id="blueblock">Sponsors</span>
-        <div class="thumb_content">
-            <h1>Sponsors</h1>
-            <br />
-            <a href="oursponsors.html">Our Sponsors</a>
-            <br />
-            <a href="sponsorus.html">Sponsor Us</a>
-        </div>
-    </div>
-    <!-- block end -->
-    <div id="menu-wrap" />
-    <div class="menu-block">
-        <span id="whiteblock">Tutorials</span>
-        <div class="thumb_content">
-            <h1>Tutorials</h1>
-            <br />
-            <a href="designtutorials.html">Design</a>
-            <br />
-            <a href="machiningtutorials.html">Machining</a>
-            <br />
-            <a href="electronicstutorials.html">Electronics</a>
-            <br />
-            <a href="programmingtutorials.html">Programming</a>
-            <br />
-            <a href="faqs.html">FAQs</a>
-        </div>
-    </div>
-    <!-- block end -->
-    <div id="menu-wrap">
-        <div class="menu-block">
-            <a href="contactus.html"><span id="contact">Contact</span></a>
-        </div>
-        <!-- block end -->
-    </div>
-</center>
+  {% endfor %}
