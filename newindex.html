@@ -1,0 +1,275 @@
+---
+layout: default
+title: New Index
+id: newindex
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team 4 ELEMENT</title>
+        <link rel="Stylesheet" href="style.css" />
+        <link rel="Stylesheet" href="menuBar.css" />
+        <link rel="stylesheet" type="text/css" href="flexdropdown.css" />
+        <link rel="Stylesheet" type="text/css" href="newmenu.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <!--<script type="text/javascript" src="jquery.min.js"></script>
+            <script type="text/javascript" src="flexdropdown.js"></script>-->
+        <script type="text/javascript">
+            var timeout = 500;
+            var closetimer  = 0;
+            var ddmenuitem  = 0;
+            
+            // open hidden layer
+            function mopen(id)
+            {   
+                // cancel close timer
+                mcancelclosetime();
+            
+                // close old layer
+                if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+            
+                // get new layer and show it
+                ddmenuitem = document.getElementById(id);
+                ddmenuitem.style.visibility = 'visible';
+            
+            }
+            // close showed layer
+            function mclose()
+            {
+                if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+            }
+            
+            // go close timer
+            function mclosetime()
+            {
+                closetimer = window.setTimeout(mclose, timeout);
+            }
+            
+            // cancel close timer
+            function mcancelclosetime()
+            {
+                if(closetimer)
+                {
+                    window.clearTimeout(closetimer);
+                    closetimer = null;
+                }
+            }
+            
+            // close layer when click-out
+            document.onclick = mclose; 
+                    
+        </script>
+    </head>
+    <body>
+        <center>
+            <div class="header">
+                <img src="images/new/banner.png" />
+            </div>
+            <div class="menu" />
+            <!--<a href="#footer">Footer</a>-->
+            <ul id="sddm">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">FIRST</a>
+                    <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                        <a href="#">Website</a>
+                        <a href="#">Motto</a>
+                        <a href="#">History</a>
+                        <a href="#">2012 Game Info</a>
+                        <a href="#">Previous Games</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onmouseover="mopen('m2')" onmouseout="mclosetime()">About Us</a>
+                    <div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                        <a href="#">Our Team</a>
+                        <a href="#">Our School</a>
+                        <a href="#">Achievements</a>
+                        <a href="#">Team Members</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onmouseover="mopen('m3')" onmouseout="mclosetime()">Our Robot</a>
+                    <div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" />
+                    <a href="#">2012</a>
+                </li>
+                <li><a href="#">Mentors</a></li>
+                <li>
+                    <a href="#" onmouseover="mopen('m4')" onmouseout="mclosetime()">Media</a>
+                    <div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" />
+                    <a href="#">Team Blog</a><a href="#">Photo Gallery</a><a href="#">Video Gallery</a>
+                </li>
+                <li>
+                    <a href="#" onmouseover="mopen('m5')" onmouseout="mclosetime()">Sponsors</a>
+                    <div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" />
+                    <a href="#">Our Sponsers</a><a href="#">Sponsor Us</a>
+                </li>
+                <li>
+                    <a href="#" onmouseover="mopen('m6')" onmouseout="mclosetime()">Tutorials</a>
+                    <div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                        <a href="#">Design</a><a href="#">Machining</a><a href="#">Electronics</a><a href="#">Programming</a><a href="#">Any Other Questions</a>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!--<div style="clear:both"></div>-->
+            </div>
+            <div class="mainContainer">
+                <div class="leftContainer">
+                    <div class="socialButtons2">
+                        <img src="images/followteam4.png" width="310px" height="39px" />
+                    </div>
+                    <div class="socialButtons">
+                        <img src="images/socialbuttons/youtube.png" width="auto" height="auto" />&nbsp;&nbsp;<img src="images/socialbuttons/twitter.png" width="auto" height="auto" />&nbsp;&nbsp;<img src="images/socialbuttons/facebook.png" width="auto" height="auto" />
+                    </div>
+                    <div class="socialButtons2">
+                        <img src="images/importantdates.png" width="310px" height="39px" />
+                    </div>
+                    <br />
+                    <div class="socialButtons">
+                        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=379&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=team4elementrobotics%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="310" height="379" frameborder="0" scrolling="no"></iframe>    
+                    </div>
+                    <br />
+                    <div class="socialButtons2">
+                        <img src="images/announcements.png" width="310px" height="39px" />
+                    </div>
+                    {% for post in site.posts %}
+                    <div class="contentInsideAnn"><br />
+                    <h5><a href="{{ post.url }}">{{ post.title }}</a></h5><br />                        <div style="clear:both;">&nbsp;</div>
+
+                        
+                    </div>
+                        {% endfor %}
+
+                </div>
+                <br />
+                <div class="rightContainer">
+                    <div class="rightContainerText">
+                        <div class="photoSlider">
+                            asdfasdasdf
+                            dsaf
+                            adfs
+                            dfs
+                            afdsa
+                            dfs
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <script type="text/javascript">
+                    function changeTextE(){
+                        document.getElementById('boldStuff').innerHTML = 'Engineering ';
+                    }
+                    
+                    function changeTextBackE(){
+                        document.getElementById('boldStuff').innerHTML = 'E . ';
+                    }
+                    
+                    function changeTextL(){
+                        document.getElementById('boldStuff2').innerHTML = 'Leadership ';
+                    }
+                    
+                    function changeTextBackL(){
+                        document.getElementById('boldStuff2').innerHTML = 'L . ';
+                    
+                    }
+                        
+                    
+                    function changeTextP(){
+                        document.getElementById('boldStuff3').innerHTML = 'Entrepreneurship ';
+                    }
+                    
+                    function changeTextBackP(){
+                        document.getElementById('boldStuff3').innerHTML = 'E . ';
+                    
+                    }
+                    
+                    function changeTextQ(){
+                        document.getElementById('boldStuff4').innerHTML = 'Mentoring ';
+                    }
+                    
+                    function changeTextBackQ(){
+                        document.getElementById('boldStuff4').innerHTML = 'M . ';
+                    
+                    }
+                    
+                    
+                    function changeTextR(){
+                        document.getElementById('boldStuff5').innerHTML = 'Education ';
+                    }
+                    
+                    function changeTextBackR(){
+                        document.getElementById('boldStuff5').innerHTML = 'E . ';
+                    
+                    }
+                    
+                    
+                    function changeTextS(){
+                        document.getElementById('boldStuff6').innerHTML = 'Networking ';
+                    }
+                    
+                    function changeTextBackS(){
+                        document.getElementById('boldStuff6').innerHTML = 'N . ';
+                    
+                    }
+                    
+                    
+                    function changeTextT(){
+                        document.getElementById('boldStuff7').innerHTML = 'Teamwork ';
+                    }
+                    
+                    function changeTextBackT(){
+                        document.getElementById('boldStuff7').innerHTML = 'T . ';
+                    
+                    }
+                </script>
+                <span class="team4Header">&nbsp;&nbsp;&copy;&nbsp;Team 4</span>&nbsp;&nbsp;<span class="teamHeader" id="boldStuff" onmouseover="changeTextE()" onmouseout="changeTextBackE()" value="Change Text">E . </span>
+                <span class="teamHeader" id="boldStuff2" onmouseover="changeTextL()" onmouseout="changeTextBackL()" value="Change Text">L . </span>
+                <span class="teamHeader" id="boldStuff3" onmouseover="changeTextP()" onmouseout="changeTextBackP()" value="Change Text">E . </span> 
+                <span class="teamHeader" id="boldStuff4" onmouseover="changeTextQ()" onmouseout="changeTextBackQ()" value="Change Text">M . </span> 
+                <span class="teamHeader" id="boldStuff5" onmouseover="changeTextR()" onmouseout="changeTextBackR()" value="Change Text">E . </span> 
+                <span class="teamHeader" id="boldStuff6" onmouseover="changeTextS()" onmouseout="changeTextBackS()" value="Change Text">N . </span> 
+                <span class="teamHeader" id="boldStuff7" onmouseover="changeTextT()" onmouseout="changeTextBackT()" value="Change Text">T . </span><span class="team4Header">&nbsp;2012</span>
+                <br />
+                Graciously and Professionaly Designed by Jeffrey Garcia, 12 & Programmed by Shawn Schwartz, 9
+                <br />
+                Powered by<a href="#">Jekyll</a>
+                <br />
+            </div>
+        </center>
+    </body>
+</html>

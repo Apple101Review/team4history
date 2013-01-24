@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>testMenunewIndex</title>
+        <link rel="Stylesheet" href="newmenu.css" />
+<script type="text/javascript">
+var timeout = 500;
+var closetimer  = 0;
+var ddmenuitem  = 0;
+
+// open hidden layer
+function mopen(id)
+{   
+    // cancel close timer
+    mcancelclosetime();
+
+    // close old layer
+    if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+    // get new layer and show it
+    ddmenuitem = document.getElementById(id);
+    ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+    if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+    closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+    if(closetimer)
+    {
+        window.clearTimeout(closetimer);
+        closetimer = null;
+    }
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+        </script>
+	</head>
+
+    <body>
+
+<ul id="sddm">
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Home</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#">HTML Drop Down</a>
+        <a href="#">DHTML Menu</a>
+        <a href="#">JavaScript DropDown</a>
+        <a href="#">Cascading Menu</a>
+        <a href="#">CSS Horizontal Menu</a>
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Download</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#">ASP Dropdown</a>
+        <a href="#">Pulldown menu</a>
+        <a href="#">AJAX Drop Submenu</a>
+        <a href="#">DIV Cascading Menu</a>
+        </div>
+    </li>
+    <li><a href="#">Order</a></li>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+<div style="clear:both"></div>
+ 
+    </body>
+    </html>

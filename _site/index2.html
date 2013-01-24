@@ -1,0 +1,209 @@
+<html>
+<head>
+</head>
+<body>
+	<br />
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="Stylesheet" href="style.css" />
+        <link rel="Stylesheet" href="menuBar.css" />
+        <link rel="stylesheet" type="text/css" href="flexdropdown.css" />
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>-->
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="flexdropdown.js"></script>
+    </head>
+    <body>
+        <!--
+            <div class="posts">
+            	<h1><a href="/10-30-2011/team_4_has_a_website.html">Team 4 Has a asfaWebsite</a></h1>
+            	<p><p>After an embarassingly long wait, Team 4 ELEMENT finally has a website!</p></p>
+            	<div style="clear:both;">&nbsp;</div>
+            </div>
+            
+            <div class="posts">
+            	<h1><a href="/10-25-2011/team_4_has_a_website.html">Team 4 Has a Website</a></h1>
+            	<p><p>After an embarassingly long wait, Team 4 ELEMENT finally has a website!</p></p>
+            	<div style="clear:both;">&nbsp;</div>
+            </div>
+            -->
+        <script type="text/javascript">
+            function changeTextE(){
+            	document.getElementById('boldStuff').innerHTML = 'Engineering ';
+            }
+            
+            function changeTextBackE(){
+            	document.getElementById('boldStuff').innerHTML = 'E . ';
+            }
+            
+            function changeTextL(){
+            	document.getElementById('boldStuff2').innerHTML = 'Leadership ';
+            }
+            
+            function changeTextBackL(){
+            	document.getElementById('boldStuff2').innerHTML = 'L . ';
+            
+            }
+            	
+            
+            function changeTextP(){
+            	document.getElementById('boldStuff3').innerHTML = 'Entrepreneurship ';
+            }
+            
+            function changeTextBackP(){
+            	document.getElementById('boldStuff3').innerHTML = 'E . ';
+            
+            }
+            
+            function changeTextQ(){
+            	document.getElementById('boldStuff4').innerHTML = 'Mentoring ';
+            }
+            
+            function changeTextBackQ(){
+            	document.getElementById('boldStuff4').innerHTML = 'M . ';
+            
+            }
+            
+            
+            function changeTextR(){
+            	document.getElementById('boldStuff5').innerHTML = 'Education ';
+            }
+            
+            function changeTextBackR(){
+            	document.getElementById('boldStuff5').innerHTML = 'E . ';
+            
+            }
+            
+            
+            function changeTextS(){
+            	document.getElementById('boldStuff6').innerHTML = 'Networking ';
+            }
+            
+            function changeTextBackS(){
+            	document.getElementById('boldStuff6').innerHTML = 'N . ';
+            
+            }
+            
+            
+            function changeTextT(){
+            	document.getElementById('boldStuff7').innerHTML = 'Teamwork ';
+            }
+            
+            function changeTextBackT(){
+            	document.getElementById('boldStuff7').innerHTML = 'T . ';
+            
+            }
+        </script>
+        <span class="team4Header"><a href="index2.html"><img src="images/team4.png" alt="The Phoenix, Our Logo" title="The Phoenix, Our Logo" width="118px" height="204px" /></a>&nbsp;&nbsp;Team 4</span>&nbsp;&nbsp;<span class="footer" id="boldStuff" onmouseover="changeTextE()" onmouseout="changeTextBackE()" value="Change Text">E . </span>
+        <span class="footer" id="boldStuff2" onmouseover="changeTextL()" onmouseout="changeTextBackL()" value="Change Text">L . </span>
+        <span class="footer" id="boldStuff3" onmouseover="changeTextP()" onmouseout="changeTextBackP()" value="Change Text">E . </span> 
+        <span class="footer" id="boldStuff4" onmouseover="changeTextQ()" onmouseout="changeTextBackQ()" value="Change Text">M . </span> 
+        <span class="footer" id="boldStuff5" onmouseover="changeTextR()" onmouseout="changeTextBackR()" value="Change Text">E . </span> 
+        <span class="footer" id="boldStuff6" onmouseover="changeTextS()" onmouseout="changeTextBackS()" value="Change Text">N . </span> 
+        <span class="footer" id="boldStuff7" onmouseover="changeTextT()" onmouseout="changeTextBackT()" value="Change Text">T . </span> &nbsp;&nbsp;<a href="http://usfirst.org" target="_blank"><img src="images/frc.gif" alt="FRC Logo" title="FRC Logo" width="200px" height="157px" /></a>
+        <center>
+            <div class="teamMenu">
+                <ul id="nav" />
+                <li>
+                <li>
+                    <p style="text-align:left"><a href="#" data-flexmenu="flexmenu" data-dir="h" data-offsets="8,0">FIRST&nbsp;&rarr;</a></p>
+                    <ul id="flexmenu" class="flexdropdownmenu">
+                        <li><a href="#">Website</a></li>
+                        <li><a href="#">Motto</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">2012 Game Info</a></li>
+                        <li><a href="#">Previous FRC Games</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <p style="text-align:left"><a href="#" data-flexmenu="flexmenuabout" data-dir="h" data-offsets="8,0">About Us&nbsp;&rarr;</a></p>
+                    <ul id="flexmenuabout" class="flexdropdownmenu">
+                        <li><a href="#">About Our Team</a></li>
+                        <li><a href="#">Team History</a></li>
+                        <li><a href="#">About Our School</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li>
+                            <a href="#">Our Team</a>
+                            <ul>
+                                <li><a href="#">Teachers</a></li>
+                                <li><a href="#">Students</a></li>
+                                <li><a href="#">Mentors</a></li>
+                                <li><a href="#">Parents</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p style="text-align:left"><a href="#" data-flexmenu="flexmenurobot" data-dir="h" data-offsets="8,0">Our Robot&nbsp;&rarr;</a></p>
+                    <ul id="flexmenurobot" class="flexdropdownmenu">
+                        <li>
+                            <a href="#">2012</a>
+                            <ul>
+                                <li><a href="#">Tech Specs</a></li>
+                                <li><a href="#">Pictures</a></li>
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Subsystems</a></li>
+                                <li><a href="#">Regional Rankings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p style="text-align:left"><a href="#" data-flexmenu="flexmenuMedia" data-dir="h" data-offsets="8,0">Media&nbsp;&rarr;</a></p>
+                    <ul id="flexmenuMedia" class="flexdropdownmenu">
+                        <li><a href="#">Team Blog</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="#">Video Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p style="text-align:left"><a href="#" data-flexmenu="flexmenuSponsors" data-dir="h" data-offsets="8,0">Sponsors&nbsp;&rarr;</a></p>
+                    <ul id="flexmenuSponsors" class="flexdropdownmenu">
+                        <li><a href="#">Our Sponsors</a></li>
+                        <li><a href="#">Become a Sponsor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p style="text-align:left"><a href="#" data-flexmenu="flexmenuApps" data-dir="h" data-offsets="8,0">Mobile Apps&nbsp;&rarr;</a></p>
+                    <ul id="flexmenuApps" class="flexdropdownmenu">
+                        <li>
+                            <a href="#">iOS</a>
+                            <ul>
+                                <li><a href="#">Phoenix Pit Scout (Coming Soon)</a></li>
+                                <li><a href="#">Phoenix Scout (Coming Soon)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Andriod</a>
+                            <ul>
+                                <li><a href="#">Phoenix Pit Scout (Coming Soon)</a></li>
+                                <li><a href="#">Phoenix Scout (Coming Soon)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p style="text-align:left"><a href="#" data-flexmenu="flexmenuTuts" data-dir="h" data-offsets="8,0">Robot Tutorials&nbsp;&rarr;</a></p>
+                    <ul id="flexmenuTuts" class="flexdropdownmenu">
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Machining</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Any Other Questions</a></li>
+                    </ul>
+                </li>
+            </div>
+            <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+        
+        </center>
+    </body>
+</html>
+</body>
+</html>
